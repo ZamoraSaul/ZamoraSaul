@@ -175,15 +175,16 @@ h1{
 .catalogo{
     background-color: #FFEFE2;
     margin-top: 94px;
+    height: 2250px;
 }
 .catalogoProductos{
-    border: red 1px solid;
+    
     display: grid;
     grid-template-columns: 30% 30%;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    width: 99%;
+    width: 100%;
 }
 
 .producto{
