@@ -110,7 +110,7 @@ h1{
 }
 .botonUno a{
     text-decoration: none;
-    font-family: Montserrat;
+    font-family: "Montserrat";
     font-weight: 400;
     font-size: 16px;
     line-height: 0;
@@ -157,7 +157,7 @@ h1{
 .servicioSubtitulo{
     text-align: center;
     text-transform: uppercase;
-    font-family: Montserrat;
+    font-family: "Montserrat";
     letter-spacing: 15px;
     font-size: 16px;
     margin-top: 15px;
@@ -169,6 +169,7 @@ h1{
     text-align: center;
     line-height: 32px;
     margin-top: 46px;
+    font-family: "Montserrat";
 }
 
 .catalogo{
@@ -186,13 +187,15 @@ h1{
 }
 
 .producto{
-    border: black 1px solid;
+    
     align-items: center;
     justify-content: center;
-    text-align: center
+    text-align: center;
+    margin-top: 15px;
+    border-bottom: rgba(0, 0, 0, 0.15) solid 1px;
 }
 .producto h4 {
-    font-family: Raleway;
+    font-family: "Raleway";
     font-weight: 300;
     text-transform: uppercase;
     text-align: center;
@@ -205,4 +208,33 @@ h1{
     height: 325px;
     object-fit: cover;
     margin: 25px;
+}
+.parrafoCatalogo{
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 25px;
+}
+.botoncontainer{
+    display: flex;
+    justify-content: center;
+}
+.botoncatalogo{
+    width: 137px;
+    height: 55px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: var(--main-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+.botoncatalogo a{
+    text-decoration: none;
+    color: white;
+    font-family: "Raleway";
 }
