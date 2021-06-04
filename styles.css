@@ -239,3 +239,17 @@ h1{
     color: white;
     font-family: "Raleway";
 }
+
+.contacto{
+    height: 600px;
+    background-color: #3B3B3B;
+    width: 100%;
+    display: flex;
+}
+.tituloContacto{
+    font-family: "Raleway";
+    font-size: 72px;
+    font-weight: 500;
+    margin-top: 54px;
+    margin-left: 46px;
+}
