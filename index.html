@@ -100,15 +100,22 @@
         </div>
     </div>
     <div class="contacto">
+        <h2 class="tituloContacto">Contáctanos</h2>
         <form class="formularioContacto" action="main/correos.php" method="post">
-
-            <h2 class="tituloContacto">Contáctanos</h2>
-            <input type="text" class="textbox" placeholder="Nombre" name="nombre" required>
-            <input type="email" class="textbox" placeholder="Correo" name="correo" required>
-            <input type="text" class="textbox" placeholder="Asunto" name="asunto" required>
-            <textarea name="mensaje" placeholder="Mensaje"></textarea>
-            <input type="submit" class="btn" name="enviar" value="enviar">
-
+            <div class="formcontainer">
+                <label for="nombre">Nombre completo</label>
+                <input type="text"  class="nombrecompleto" class="textbox" placeholder="" name="nombre" required>
+                <label for="correo">Email</label>
+                <input type="email" class="textbox" placeholder="" name="correo" required>
+                <label for="telefono">Numero de Telefono</label>
+                <input type="email" class="textbox" placeholder="" name="telefono" required>
+                <input type="submit" class="btn" name="enviar" value="enviar">
+                
+            </div>
+            <div class="mensajecontainer">
+                <label for="Mensaje">Mensaje</label>
+                <textarea name="mensaje" placeholder=""></textarea>
+            </div>
         </form>
     </div>
     <footer>
