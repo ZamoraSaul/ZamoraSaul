@@ -25,9 +25,9 @@ nav{
 .navigator ul{
     display: flex;
     flex-direction: row;
-    width: 625px;
+    width: 100%;
     justify-content: space-between;
-    margin-right: 50px;
+    margin-right: 10rem;
 }
 .logo {
     margin-left: 40px;
@@ -41,6 +41,7 @@ nav{
 }
 .nav{
     margin-left: auto;
+    margin-right: 50px;
 }
 li{
     display: flex;
@@ -82,7 +83,7 @@ h1{
     
 }
 .parrafoInicio{
-    width: 70em;
+    width: 70%;
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
@@ -107,6 +108,7 @@ h1{
     justify-content: center;
     text-align: center;
     align-items: center;
+    margin-right: 10px;
 }
 .botonUno a{
     text-decoration: none;
@@ -126,12 +128,13 @@ h1{
     text-align: center;
     align-items: center;
     background-color: var(--main-color);
+    margin-left: 10px;
 }
 .botonDos a{
     text-decoration: none;
     font-family: Montserrat;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1em;
     line-height: 0;
     color: white;
 }
@@ -176,6 +179,7 @@ h1{
     background-color: #FFEFE2;
     margin-top: 94px;
     height: 2250px;
+    width: 100%;
 }
 .catalogoProductos{
     
@@ -205,8 +209,8 @@ h1{
     margin-bottom: 40px;
 }
 .producto img{
-    width: 325px;
-    height: 325px;
+    width: 20rem;
+    height: 20rem;
     object-fit: cover;
     margin: 25px;
 }
