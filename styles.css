@@ -305,3 +305,16 @@ input{
     resize: none;
     width: 100%;
 }
+footer{
+    width: 100%;
+    background-color: #141414;
+    height: 6rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+footer p{
+    width: 40%;
+}
