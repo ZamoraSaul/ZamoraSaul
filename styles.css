@@ -183,6 +183,10 @@ h1{
     height: 2250px;
     width: 100%;
 }
+.catalogo2{
+    background-color: #FFEFE2;
+    width: 100%;
+}
 .catalogoProductos{
     
     display: grid;
@@ -200,6 +204,7 @@ h1{
     text-align: center;
     margin-top: 15px;
     border-bottom: rgba(0, 0, 0, 0.15) solid 1px;
+    margin-bottom: 10px;
 }
 .producto h4 {
     font-family: "Raleway";
