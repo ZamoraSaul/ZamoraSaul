@@ -1,0 +1,49 @@
+@media screen and (max-width: 1100px){
+    .producto img{
+        max-width: 15rem;
+        max-height: 15rem;
+        margin: 10px;
+    }
+
+}
+@media screen and (max-width: 720px){
+   
+    .inicio .inicioGrupo h1{
+        font-size: 50px;
+        line-height: 55px;
+        color: #FFFFFF;
+        
+    }
+    .catalogoProductos{
+        display: flex;
+        flex-direction: column;
+    }
+    .formularioContacto{
+        display: flex;
+        flex-direction: column;
+    }
+    .contacto{
+        height: auto;
+    }
+    .catalogo{
+        height: auto;
+    }
+    .mensajecontainer{
+        
+        width: 90%;
+    }
+    .btn{
+        transform: translateY(160px);
+    }
+    .mensajecontainer{
+        transform: translateY(-130px);
+    }
+    .mensajecontainer textarea{
+        max-height: 100px;
+        min-height: 100px;
+    }
+    .parrafoCatalogo{
+        width: 80%;
+        margin: auto;
+    }
+}

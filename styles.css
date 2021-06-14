@@ -146,7 +146,7 @@ h1{
     margin-top: 54px;
     border: black 1px solid;
     width: 90%;
-    height: 450px;
+    height: auto;
     justify-content: center;
     
 }
@@ -187,7 +187,6 @@ h1{
     width: 100%;
 }
 .catalogoProductos{
-    
     display: grid;
     grid-template-columns: 30% 30%;
     flex-wrap: wrap;
@@ -215,10 +214,10 @@ h1{
     margin-bottom: 40px;
 }
 .producto img{
-    width: 20rem;
+    max-width: 20rem;
     height: 20rem;
     object-fit: cover;
-    margin: 25px;
+
 }
 .parrafoCatalogo{
     font-family: "Montserrat";
@@ -315,7 +314,7 @@ input, textarea{
     display: flex;
     flex-direction: column;
     margin: 5%;
-    width: 100%;
+    width: 90%;
 }
 .mensajecontainer textarea{
     height: 45%;
@@ -334,5 +333,9 @@ footer{
 
 footer p{
     width: 40%;
-    color: #3B3B3B;
+    color: white;
+}
+
+body{
+    overflow-x: hidden;
 }
