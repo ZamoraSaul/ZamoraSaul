@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    <title>Productos</title>
+</head>
+<body>
+    <nav>
+        <div class="navigator">
+            <h3 class="logo">Casa del arte</h3>
+        <div class="nav">
+            <ul>
+                <li><a class="animate__animated animate__pulse" href="index.html">inicio</a></li>
+                <li><a class="animate__animated animate__pulse" href="index.html#servicio">servicio</a></li>
+                <li><a class="animate__animated animate__pulse" href="index.html#catalogo">catalogo</a></li>
+                <li><a class="animate__animated animate__pulse" href="#contacto">contacto</a></li>
+            </ul>   
+        </div> 
+        </div>
+    </nav>
+    <div class="catalogo2" id="catalogo">
+        <div class="productos">
+            <div class="catalogoProductos"> 
+                <div class="producto">
+                    <h4>Calado en madera</h4>
+                    <img src="./img/1.jpg" alt="">
+                    <p class="parrafoCatalogo">Grabado en madera para un monton de ocasiones que  necesite en ocasiones especiales para una sorpresa.</p>
+                </div>
+                <div class="producto">
+                    <h4>Calado en madera</h4>
+                    <img src="./img/1.jpg" alt="">
+                    <p class="parrafoCatalogo">Grabado en madera para un monton de ocasiones que  necesite en ocasiones especiales para una sorpresa.</p>
+                </div>
+                <div class="producto">
+                    <h4>Calado en madera</h4>
+                    <img src="./img/1.jpg" alt="">
+                    <p class="parrafoCatalogo">Grabado en madera para un monton de ocasiones que  necesite en ocasiones especiales para una sorpresa.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contacto" id="contacto">
+        <h2 class="tituloContacto">Contáctanos</h2>
+        <form class="formularioContacto" action="main/correos.php" method="post">
+            <div class="formcontainer">
+                <label for="nombre">NOMBRE COMPLETO</label>
+                <input type="text"  class="nombrecompleto" class="textbox" placeholder="" name="nombre" required>
+                <label for="correo">EMAIL</label>
+                <input type="email" class="textbox" placeholder="" name="correo" required>
+                <label for="telefono">NÚMERO DE TELÉFONO</label>
+                <input type="email" class="textbox" placeholder="" name="telefono" required>
+                <input type="submit" class="btn" name="enviar" value="ENVIAR">         
+            </div>
+            <div class="mensajecontainer">
+                <label for="Mensaje">MENSAJE</label>
+                <textarea name="mensaje" placeholder=""></textarea>
+            </div>
+        </form>
+    </div>
+    <footer>
+            <p>Telefono: 7545-7838 / Whatsapp: 4453-5457 / email: info@casadelarte.com
+                Copyright © codigofilm 2022</p>
+    </footer>
+</body>
+</html>
