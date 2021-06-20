@@ -62,6 +62,9 @@
 .headerMenu .textMenuSelected{
     color: #707070;
 }
+.a {
+    padding: 25%;
+}
 .iconoDerecha{
     width: 40px;
     height: 40px;
@@ -186,7 +189,7 @@ h1{
     font-size: 16px;
     line-height: 0;
     color: white;
-    padding: 0px 10px;
+    padding: 20%;
     
 }
 .botonDos{
@@ -208,7 +211,7 @@ h1{
     font-size: 1em;
     line-height: 0;
     color: white;
-    padding: 0px 10px;
+    padding: 20%;
 }
 /*Servicio*/
 .servicio{
@@ -321,6 +324,7 @@ h1{
     text-decoration: none;
     color: white;
     font-family: "Raleway";
+    padding: 15%;
 }
 /*Contácto*/
 .contacto{

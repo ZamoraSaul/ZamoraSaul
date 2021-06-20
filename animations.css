@@ -2,11 +2,9 @@
     --main-color: #CAA688
 }
 
-ul li a:hover{
-    color: rgb(255, 221, 170);
-    
+.a:hover{
+    color: rgb(255, 221, 170);   
 }
-
 html{
     scroll-behavior: smooth;
 }
@@ -29,4 +27,10 @@ textarea:focus{
 }
 .btn:hover{
     background-color:rgb(255, 221, 170);
+}
+.bontoncatalogo a:hover{
+
+}
+.botoncatalogo:hover{
+    background-color: rgb(255, 221, 170);
 }

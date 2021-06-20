@@ -109,6 +109,10 @@
     .catalogo{
         height: auto;
     }
+    .catalogo2{
+        height: auto;
+        margin-top: 20px;
+    }
     .mensajecontainer{
         
         width: 90%;

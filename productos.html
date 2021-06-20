@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="responsive.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -14,19 +15,31 @@
     <title>Productos</title>
 </head>
 <body>
-    <nav>
-        <div class="navigator">
-            <h3 class="logo">Casa del arte</h3>
-        <div class="nav">
-            <ul>
-                <li><a class="animate__animated animate__pulse" href="index.html">inicio</a></li>
-                <li><a class="animate__animated animate__pulse" href="index.html#servicio">servicio</a></li>
-                <li><a class="animate__animated animate__pulse" href="index.html#catalogo">catalogo</a></li>
-                <li><a class="animate__animated animate__pulse" href="#contacto">contacto</a></li>
-            </ul>   
-        </div> 
+    <header class="header">
+        <div class="contenidoHeader">
+            
+            <div class="headerLogo">
+                <h1 class="animate__animated animate__bounceInDown"><b>CASA DEL ARTE</b></h1>
+            </div>
+
+            <div class="headerMenu" id="mostrarMenu">
+                <nav>
+                    <ul>
+                        <button id="botonCerrar">˄</button>
+                        <li><a class="a"  href="index.html#inicio" onclick="cerrarMenu(); ">INICIO</a></li>
+                        <li><a class="a" href="index.html#servicio" onclick="cerrarMenu(); ">SERVICIO</a></li>
+                        <li><a class="a" href="index.html#catalogo" onclick="cerrarMenu(); ">CATALOGO</a></li>
+                        <li><a class="a" href="#contacto" onclick="cerrarMenu(); ">CONTACTO</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-    </nav>
+
+        <div id="iconoMenu" class="iconoDerecha">
+            <img src="img/menu.png" alt="" >
+        </div>
+
+    </header>
     <div class="catalogo2" id="catalogo">
         <div class="productos">
             <div class="catalogoProductos"> 
@@ -70,5 +83,7 @@
             <p>Telefono: 7545-7838 / Whatsapp: 4453-5457 / email: info@casadelarte.com
                 Copyright © codigofilm 2022</p>
     </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
