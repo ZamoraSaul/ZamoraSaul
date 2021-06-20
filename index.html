@@ -6,26 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="responsive.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <title>Casa del Arte</title>
 </head>
 <body>
-    <nav>
-        <div class="navigator">
-            <h3 class="logo">Casa del arte</h3>
-        <div class="nav">
-            <ul>
-                <li><a href="#inicio">inicio</a></li>
-                <li><a href="#sevicio">servicio</a></li>
-                <li><a href="#catalogo">catalogo</a></li>
-                <li><a href="#contacto">contacto</a></li>
-            </ul>   
-        </div> 
+
+    <header class="header">
+        <div class="contenidoHeader">
+            
+            <div class="headerLogo">
+                <h1 class="animate__animated animate__bounceInDown"><b>CASA DEL ARTE</b></h1>
+            </div>
+
+            <div class="headerMenu" id="mostrarMenu">
+                <nav>
+                    <ul>
+                        <button id="botonCerrar">˄</button>
+                        <li><a class="a"  href="#inicio" onclick="cerrarMenu(); ">INICIO</a></li>
+                        <li><a class="a" href="#servicio" onclick="cerrarMenu(); ">SERVICIO</a></li>
+                        <li><a class="a" href="#catalogo" onclick="cerrarMenu(); ">CATALOGO</a></li>
+                        <li><a class="a" href="#contacto" onclick="cerrarMenu(); ">CONTACTO</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-    </nav>
-    <div class="inicio">
+
+        <div id="iconoMenu" class="iconoDerecha">
+            <img src="img/menu.png" alt="" >
+        </div>
+
+    </header>
+
+    <div class="inicio" id="inicio">
        <div class="inicioGrupo">
            <h1>Grabados en Madera</h1>
            <p class="parrafoInicio">
@@ -38,14 +56,14 @@
        </div>
        
     </div>
-    <div class="servicio">
+    <div class="servicio" id="servicio">
         <div class="servicioGrupo">
             <h2 class="servicioTitulo">Servicio de Corte y Grabado de Láser</h2>
             <p class="servicioSubtitulo">corte de calidad</p>
             <p class="servicioParrafo">Conoce el más Profesional Servicio de Corte y Grabado Láser en Guatemala en dónde te ofrecemos la mejor atención y la más alta calidad en cada lacerado o corte. Después de 5 años de haber iniciado operaciones en Guatemala, Shapes and Colors ha tenido un crecimiento exponencial por el excelente servicio que brinda en el servicio de corte y grabado láser en diferentes materiales como MDF, madera y vidrio entre otros, atención al cliente y logística para la entrega con sus diferentes clientes en el sector metropolitano de Guatemala.</p>
         </div>
     </div>  
-    <div class="catalogo">
+    <div class="catalogo" id="catalogo">
         <div class="productos">
             <div class="catalogoProductos"> 
                 <div class="producto">
@@ -53,7 +71,7 @@
                     <img src="./img/1.jpg" alt="">
                     <p class="parrafoCatalogo">Grabado en madera para un monton de ocasiones que  necesite en ocasiones especiales para una sorpresa.</p>
                     <div class="botoncontainer">
-                        <div class="botoncatalogo"><a href="#">VER MÁS...</a></div>
+                        <div class="botoncatalogo"><a href="productos.html">VER MÁS...</a></div>
                     </div>
                 </div>
                 <div class="producto">
@@ -61,7 +79,7 @@
                     <img src="./img/1.jpg" alt="">
                     <p class="parrafoCatalogo">Grabado en madera para un monton de ocasiones que  necesite en ocasiones especiales para una sorpresa.</p>
                     <div class="botoncontainer">
-                        <div class="botoncatalogo"><a href="#">VER MÁS...</a></div>
+                        <div class="botoncatalogo"><a href="productos.html">VER MÁS...</a></div>
                     </div>
                 </div>
                 <div class="producto">
@@ -69,7 +87,7 @@
                     <img src="./img/1.jpg" alt="">
                     <p class="parrafoCatalogo">Grabado en madera para un monton de ocasiones que  necesite en ocasiones especiales para una sorpresa.</p>
                     <div class="botoncontainer">
-                        <div class="botoncatalogo"><a href="#">VER MÁS...</a></div>
+                        <div class="botoncatalogo"><a href="productos.html">VER MÁS...</a></div>
                     </div>
                 </div>
                 <div class="producto">
@@ -77,7 +95,7 @@
                     <img src="./img/1.jpg" alt="">
                     <p class="parrafoCatalogo">Grabado en madera para un monton de ocasiones que  necesite en ocasiones especiales para una sorpresa.</p>
                     <div class="botoncontainer">
-                        <div class="botoncatalogo"><a href="#">VER MÁS...</a></div>
+                        <div class="botoncatalogo"><a href="productos.html">VER MÁS...</a></div>
                     </div>
                 </div>
                 <div class="producto">
@@ -85,7 +103,7 @@
                     <img src="./img/1.jpg" alt="">
                     <p class="parrafoCatalogo">Grabado en madera para un monton de ocasiones que  necesite en ocasiones especiales para una sorpresa.</p>
                     <div class="botoncontainer">
-                        <div class="botoncatalogo"><a href="#">VER MÁS...</a></div>
+                        <div class="botoncatalogo"><a href="productos.html">VER MÁS...</a></div>
                     </div>
                 </div>
                 <div class="producto">
@@ -93,13 +111,13 @@
                     <img src="./img/1.jpg" alt="">
                     <p class="parrafoCatalogo">Grabado en madera para un monton de ocasiones que  necesite en ocasiones especiales para una sorpresa.</p>
                     <div class="botoncontainer">
-                        <div class="botoncatalogo"><a href="#">VER MÁS...</a></div>
+                        <div class="botoncatalogo"><a href="productos.html">VER MÁS...</a></div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="contacto">
+    <div class="contacto" id="contacto">
         <h2 class="tituloContacto">Contáctanos</h2>
         <form class="formularioContacto" action="main/correos.php" method="post">
             <div class="formcontainer">
@@ -121,5 +139,7 @@
             <p>Telefono: 7545-7838 / Whatsapp: 4453-5457 / email: info@casadelarte.com
                 Copyright © codigofilm 2022</p>
     </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>

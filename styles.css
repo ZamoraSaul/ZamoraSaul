@@ -8,46 +8,117 @@
     
 }
 /*Navigator*/ 
-nav{
-    position: fixed;
+.header{
+    top: 0;
+    left: 0;
+    z-index: 2;
     width: 100%;
     height: 67px;
-    left: 0px;
-    top: 0px;
+    position: fixed;
     background: var(--main-color);
+    
 }
-.navigator{
+.contenidoHeader{
+    margin: auto;
+    max-width: 90%;
     display: flex;
-    margin : auto;
-    align-items: center;
-    height: 100%;
-
-}
-.navigator ul{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
     justify-content: space-between;
-    margin-right: 10rem;
 }
-.logo {
-    margin-left: 40px;
-    font-family: Raleway;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 21px;
-    text-transform: uppercase;
+.headerLogo{
+    height: 67px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerLogo h1{
     color: white;
+    font-size: 18px;
 }
-.nav{
-    margin-left: auto;
-    margin-right: 50px;
+.headerMenu{
+    height: 67px;
 }
-li{
+.headerMenu nav{
+    height: 100%;
+}
+.headerMenu nav ul{
+    height: 100%;
+    display: flex;
+    list-style: none;
+}
+.headerMenu nav li{
+    height: 100%;
+    margin: 0 20px 0 20px;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+}
+.headerMenu nav ul li a{
+    transition: all 200ms;
+    font-size: 15px;
+    color: white;
+}
+.headerMenu .textMenuSelected{
+    color: #707070;
+}
+.a {
+    padding: 25%;
+}
+.iconoDerecha{
+    width: 40px;
+    height: 40px;
+    top: 13px;
+    right: 40px;
+    
+    border-radius: 10px;
+    position: absolute;
+    display: none;
+    cursor: pointer;
+    transition: all 200ms;
+    align-items: center;
+    justify-content: center;
+}
+.iconoDerecha img{
+    width: 50%;
+    filter: invert(100%);
+}
+.iconoIzquierda{
+    width: 40px;
+    height: 90px;
+    left: -30px;
+        
+    border-radius: 10px;
+    position: fixed;
+    display: none;
+    cursor: pointer;
+    transition: all 200ms;
+}
+.iconoIzquierda img{
+    display: none;
+}
+#iconoMenu:hover{
+    opacity: 0.5;
+}
+#botonCerrar{
+    display: none;
+    padding: 20px;
+    border: none;
+    font-size: 20px;
+    outline: none;
+    right: 0;
+    background: none;
+    color: var(--text);
+    position: absolute;
+    transition: all 200ms;
+}
+#botonCerrar:hover{
+    opacity: 0.4;
+}
+.menuLateral img{
+    left: 0;
+    right: unset;
+    top: 30px;
 }
 
 ul li a{
@@ -98,7 +169,7 @@ h1{
     align-items: center;
     margin-top: 50px;
     width: 25%;
-    justify-content: space-between;
+    justify-content: center;
 }
 .botonUno{
     border: white 3px solid;
@@ -118,6 +189,8 @@ h1{
     font-size: 16px;
     line-height: 0;
     color: white;
+    padding: 20%;
+    
 }
 .botonDos{
     border: white 3px solid;
@@ -138,6 +211,7 @@ h1{
     font-size: 1em;
     line-height: 0;
     color: white;
+    padding: 20%;
 }
 /*Servicio*/
 .servicio{
@@ -146,7 +220,7 @@ h1{
     margin-top: 54px;
     border: black 1px solid;
     width: 90%;
-    height: 450px;
+    height: auto;
     justify-content: center;
     
 }
@@ -176,15 +250,20 @@ h1{
     margin-top: 46px;
     font-family: "Montserrat";
 }
+.servicioGrupo{
+    padding-bottom: 40px;
+}
 /*Catálogo*/
 .catalogo{
     background-color: #FFEFE2;
     margin-top: 94px;
-    height: 2250px;
+    width: 100%;
+}
+.catalogo2{
+    background-color: #FFEFE2;
     width: 100%;
 }
 .catalogoProductos{
-    
     display: grid;
     grid-template-columns: 30% 30%;
     flex-wrap: wrap;
@@ -200,6 +279,7 @@ h1{
     text-align: center;
     margin-top: 15px;
     border-bottom: rgba(0, 0, 0, 0.15) solid 1px;
+    margin-bottom: 10px;
 }
 .producto h4 {
     font-family: "Raleway";
@@ -211,10 +291,10 @@ h1{
     margin-bottom: 40px;
 }
 .producto img{
-    width: 20rem;
+    max-width: 20rem;
     height: 20rem;
     object-fit: cover;
-    margin: 25px;
+
 }
 .parrafoCatalogo{
     font-family: "Montserrat";
@@ -244,6 +324,7 @@ h1{
     text-decoration: none;
     color: white;
     font-family: "Raleway";
+    padding: 15%;
 }
 /*Contácto*/
 .contacto{
@@ -268,7 +349,7 @@ h1{
     line-height: normal;
     text-align: left;
     margin-left: 65px;
-    padding-top: 50px;
+    padding-top: 100px;
     color: white;
 }
 input, textarea{
@@ -286,17 +367,15 @@ input, textarea{
 .btn{
     width: 30%;
     height: 50px;
-    font-weight: 900;
+    font-weight: 500;
     border-radius: 10px;
     background-color: var(--main-color);;
     margin-top: 20px;
-    border: 5px white solid;
+    border: 3px white solid;
     color: white;
 }
 .formularioContacto{
-    height: 100%;
-    width: 90%;
-    padding: 0px 46px;
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     min-width: 40%;
@@ -310,17 +389,17 @@ input, textarea{
 .mensajecontainer{
     display: flex;
     flex-direction: column;
-    margin: 5%;
-    width: 100%;
+    padding: 5% 0% 0% 5%;
+    width: 90%;
 }
 .mensajecontainer textarea{
     height: 45%;
-    width: 100%;
+    width: 95%;
 }
 /*Footer*/
 footer{
     width: 100%;
-    background-color: #141414;
+    background-color: rgb(27, 27, 27);
     height: 6rem;
     text-align: center;
     align-items: center;
@@ -330,4 +409,5 @@ footer{
 
 footer p{
     width: 40%;
+    color: white;
 }
