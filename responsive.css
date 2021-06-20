@@ -6,8 +6,85 @@
     }
 
 }
+@media screen and (max-width: 1000px){
+    .headerLogo{
+        display: none;
+    }
+    .contenidoHeader{
+        max-width: 800px;
+    }
+    .headerMenu{
+        margin: auto;
+    }
+    
+    
+}
+
 @media screen and (max-width: 720px){
-   
+
+    .headerLogo{
+        display: flex;
+        margin-left: 40px;
+    }
+    .mostrarLateral {
+        left: 20px;
+        width: 300px;
+        transform: translateX(0px);
+    }
+    #botonCerrar{
+        display: inline;
+        color: white;
+        font-family: 'Raleway', sans-serif;
+    }
+    .headerMenu{
+        width: 100%;
+        height: 600px;
+        padding-bottom: 50px;
+        position: fixed;
+        transform: translatey(-880px);
+        top: 0px;
+        left: 0px;
+        background: var(--main-color);
+        overflow: hidden;
+        
+        transition: all 300ms cubic-bezier(1,0,0,1);
+        z-index: 5;
+    }
+    .mostrarLateral{
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        transform: translatey(0px);
+    }
+    .headerMenu nav ul {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .headerMenu nav ul li{
+        max-width: 200px;
+        height: 50px;
+        
+    }
+    .headerMenu nav ul li a{
+        margin-top: 34px;
+        color: white;
+    }
+    #iconoMenu{
+        display: flex;
+    }
+
+
+
+    .producto img{
+        max-width: 14rem;
+        max-height: 14rem;
+        margin: 10px;
+    }
+    .contenidoHeader{
+        max-width: 600px;
+    }
     .inicio .inicioGrupo h1{
         font-size: 50px;
         line-height: 55px;
@@ -19,8 +96,12 @@
         flex-direction: column;
     }
     .formularioContacto{
+        padding: 0;
         display: flex;
         flex-direction: column;
+    }
+    .formcontainer{
+        align-items: center;
     }
     .contacto{
         height: auto;
@@ -36,14 +117,65 @@
         transform: translateY(160px);
     }
     .mensajecontainer{
-        transform: translateY(-130px);
+        transform: translateY(-100px);
+        
     }
     .mensajecontainer textarea{
         max-height: 100px;
         min-height: 100px;
+        width: 80%;
+        margin-bottom: 200px;
     }
     .parrafoCatalogo{
         width: 80%;
         margin: auto;
     }
+    input{
+        width: 80%;
+        height: 24px;
+        
+    }
+    .tituloContacto{
+        font-size: 40px;
+        text-align: center;
+        margin-left: 0;
+    }
+    .mensajecontainer{
+        align-items: center;
+    }
+    .producto h4 {
+        font-weight: 600;
+        font-size: 26px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+    .btn{
+        width: 60%;
+    }
+    .servicioTitulo{
+        
+        font-size: 35px;
+    }
+    .servicioGrupo{
+        text-align: center;
+    }
+    .botoncatalogo{
+        margin-bottom: 60px;
+    }
+    .botonesInicio{
+        display: flex;
+        align-items: center;
+        margin-top: 50px;
+        width: 70%;
+        justify-content: space-between;
+    }
+    .botonUno{
+        padding: 0px 10px;
+        margin-right: 10px;
+    }
+    .botonDos{
+        padding: 0px 10px;
+        margin-left: 10px;
+    }
+
 }

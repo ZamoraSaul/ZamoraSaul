@@ -13,19 +13,33 @@
     <title>Casa del Arte</title>
 </head>
 <body>
-    <nav>
-        <div class="navigator">
-            <h3 class="logo">Casa del arte</h3>
-        <div class="nav">
-            <ul>
-                <li><a href="#inicio">inicio</a></li>
-                <li><a href="#sevicio">servicio</a></li>
-                <li><a href="#catalogo">catalogo</a></li>
-                <li><a href="#contacto">contacto</a></li>
-            </ul>   
-        </div> 
+
+    <header class="header">
+        <div class="contenidoHeader">
+            
+            <div class="headerLogo">
+                <h1 class="animate__animated animate__bounceInDown"><b>CASA DEL ARTE</b></h1>
+            </div>
+
+            <div class="headerMenu" id="mostrarMenu">
+                <nav>
+                    <ul>
+                        <button id="botonCerrar">˄</button>
+                        <li><a  href="#" onclick="cerrarMenu(); ">INICIO</a></li>
+                        <li><a href="#beneficios" onclick="cerrarMenu(); ">SERVICIO</a></li>
+                        <li><a href="#galeria" onclick="cerrarMenu(); ">CATALOGO</a></li>
+                        <li><a href="#contacto" onclick="cerrarMenu(); ">CONTACTO</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-    </nav>
+
+        <div id="iconoMenu" class="iconoDerecha">
+            <img src="img/menu.png" alt="" >
+        </div>
+
+    </header>
+
     <div class="inicio">
        <div class="inicioGrupo">
            <h1>Grabados en Madera</h1>
@@ -122,5 +136,7 @@
             <p>Telefono: 7545-7838 / Whatsapp: 4453-5457 / email: info@casadelarte.com
                 Copyright © codigofilm 2022</p>
     </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
