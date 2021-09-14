@@ -1,0 +1,329 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --fondo: #ffffff;
+    --base: #a10333;
+    --fuente: #231f20;
+  }
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: var(--fondo);
+    z-index: 2;
+    background-color: #E96252;
+}
+
+/* accesos y redes */
+
+
+.contenedorAccesos{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 0px;
+}
+
+.accesos, .redes{
+    height: 80px;
+    color: var(--fondo);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E96252;
+    z-index: 3;
+}
+
+.accesos nav, .redes nav{
+    height: 100%;
+}
+
+.accesos nav ul, .redes nav ul{
+    height: 100%;
+    display: flex;
+    list-style: none;
+}
+
+.accesos nav ul li, .redes nav ul li{
+    height: 100%;
+    margin: 0px 25px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.accesos nav ul li a{
+    color: var(--fondo);
+}
+
+.accesos nav ul li img, .redes nav ul li img{
+    height: 1.5rem;
+    filter: invert();
+    padding: 0px 10px;
+}
+
+
+/* logo y menu */
+
+.nav{
+    width: 100%;
+    background-color: var(--fondo);
+
+}
+
+.contenidoNav{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 0px;
+    background-color: var(--fondo);
+}
+
+.logo{
+    height: 120px;
+}
+
+.logo img{
+    height: 100%;
+}
+
+.menu{
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu nav {
+    height: 100%;
+}
+
+.menu nav ul{
+    height: 100%;
+    display: flex;
+    list-style: none;
+}
+
+.menu nav ul li{
+    height: 100%;
+    margin: 0px 25px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.menu nav ul li a{
+  color: var(--fuente);
+}
+
+.whatsapp{
+    position: relative;
+    max-width: 100%;
+    height: 60px;
+    margin: auto;
+    top: 200px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 0px 0px;
+
+}
+.contenidoWhatsapp{
+    background-color: #E96252;
+    padding: 18px 20px;
+    width: 30%;
+    align-items: center;
+    display: flex;
+}
+.contenidoWhatsapp img{
+    width: 1.4rem;
+    height: 1.4rem;
+    filter: invert();
+}
+.contenidoWhatsapp label {
+    font-size: 1rem;
+    color: var(--fondo);
+    padding-left: 20px;
+}
+
+
+
+/*Portada pa*/
+
+.contenedorPortada{
+    width: 100%;
+    height: 700px;
+    position: relative;
+    top: 200px;
+    background-image: url(../img/wallpaper.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedorContenido{
+    width: 60%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+}
+.logoPortada img{
+    width: 4rem;
+    filter: invert();
+    
+}
+.contenedorTexto{
+    color: var(--fondo);
+    padding: 0px 40px;
+}
+.contenedorTexto p{
+    max-width: 60%;
+    font-size: 2vh;
+}
+.contenedorTexto h1{
+    font-size: 5.3vh;
+}
+
+.doctor{
+    width: 90%;
+    height: 20%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.doctor img{
+    width: 3rem;
+    height: 3rem;
+    margin-left: 20px;
+    padding: 10px;
+    filter: invert();
+    border: solid black 2px;
+}
+.doctor p{
+    color: var(--fondo);
+}
+
+.contenedorBody{
+    margin-top: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.info{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+.img{
+    width: 45%;
+}
+.texto{
+    width: 50%;
+   
+}
+.texto p{
+    font-size: 2.3vh;
+    color: var(--fuente);
+    margin: 1rem 0rem;
+}
+.texto h1{
+    font-size: 3rem;
+    margin: 1rem 0rem;
+}
+
+
+.contenidoInfo{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+.contenidoInfo .img{
+    width: 45%;
+}
+h2{
+    font-size: 3rem;
+    margin: 1rem;
+}
+.contenidoInfo p{
+    font-size: 2.3vh;
+    color: var(--fuente);
+    width: 45%;
+}
+.titulo{
+    margin: 150px 0px 50px 0px;
+    padding: 0rem 2rem 0px 14%;
+    max-width:  fit-content;
+    border: 2px var(--base) solid;
+}
+.img img{
+    width: 100%;
+}
+
+
+.contenedorServicios{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.tituloServicios{
+    margin: 150px 0px 50px 0px;
+    padding: 0 14% 0 2rem;
+    max-width:  fit-content;
+    border: 2px var(--base) solid;
+    align-self: flex-end;
+}
+
+
+.contenidoServicios{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.textoServicios{
+    width: 25%;
+}
+.textoServicios h1{
+    font-size: 3vh;
+    margin: 20px 20px;
+}
+
+.contenidoServicios .imagenServicios{
+    width: 25%;
+    margin: 0;
+}
+
+.contenidoServicios .imagenServicios img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contenidoServicios{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
