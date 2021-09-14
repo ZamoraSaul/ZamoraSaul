@@ -4,6 +4,7 @@
     box-sizing: border-box;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
+    list-style: none;
 }
 
 :root {
@@ -321,9 +322,62 @@ h2{
     object-fit: cover;
 }
 
-.contenidoServicios{
+.contenedorRedes{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenidoRedes{
     width: 70%;
     display: flex;
     flex-wrap: wrap;
     margin: auto;
+}
+.imagenRedes{
+    width: 25%;
+    padding: 20px;
+}
+.imagenRed{
+    width: 100%;
+    object-fit: cover;
+}
+.iconoRed{
+    width: 3vh;
+    transform: translateY(-6vh);
+    margin-left: 80%;
+    filter: invert();
+}
+
+
+.contenedorContacto{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 150px;
+}
+
+.tituloContacto{
+    margin: 150px 0px 50px 0px;
+    padding: 0 14% 0 2rem;
+    max-width:  fit-content;
+    border: 2px var(--base) solid;
+    align-self: flex-end;
+}
+
+.contenidoContacto{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: right;
+}
+.contenidoContacto ul li label{
+    font-size: 2vh;
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
 }
