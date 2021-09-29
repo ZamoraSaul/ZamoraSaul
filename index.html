@@ -4,65 +4,83 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Laboratorio</title>
 
-    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
 
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="img/logo.svg" type="image/x-icon">
 
 </head>
 
 <body>
 
     <header>
+
         <div class="contenedorAccesos">
+            <div class="contenidoAccesos">
 
-            <div class="accesos">
-                <nav>
-                    <ul>
-                        <li><img src="img/acceso 1.png" alt=""><a href="#">HORARIO</a></li>
-                        <li><img src="img/acceso 2.png" alt=""><a href="#">DIRECCION</a></li>
-                    </ul>
-                </nav>
+                <div class="accesos">
+                    <nav>
+                        <ul>
+                            <li><img src="img/acceso 1.png" alt=""><a href="#">HORARIO</a></li>
+                            <li><img src="img/acceso 2.png" alt=""><a href="#">DIRECCION</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="redes">
+                    <nav>
+                        <ul>
+                            <li><a href="#"><img src="img/redes 1.png" alt=""></a></li>
+                            <li class="iconoInstagram"><a href="#"><img src="img/redes 2.png" alt=""></a></li>
+                            <li class="iconoWhatsapp" ><a href="https://api.whatsapp.com/send?phone=50245297400&text=Hola!%20Necesito%20informaci%C3%B3n%20sobre%20sus%20servicios%20"target="_blank"><img src="img/whatsapp.png" alt="" ></a></li>
+                            <li><div id="iconoMenu" class="iconoMenu animate__animated animate__bounceInDown"><img src="img/menu.png" ></div></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
-
-            <div class="redes">
-                <nav>
-                    <ul>
-                        <li><a href="#"><img src="img/redes 1.png" alt=""></a></li>
-                        <li><a href="#"><img src="img/redes 2.png" alt=""></a></li>
-                    </ul>
-                </nav>
-            </div>
-
-
-
         </div>
 
-        <div class="nav">
+        <div class="contenedorNav">
             <div class="contenidoNav">
 
                 <div class="logo">
-                    <img src="img/logo.png" alt="">
+                    <a href="https://goo.gl/maps/AWVYCAkia52ShXYo9"target="_blank"><img src="img/logo.svg" alt=""></a>
                 </div>
 
                 <div class="menu">
                     <nav>
                         <ul>
-                            <li><a href="#">INICIO</a></li>
-                            <li><a href="#">SOBRE NOSOTROS</a></li>
-                            <li><a href="#">FARMACIA</a></li>
-                            <li><a href="#">SERVICIOS</a></li>
-                            <li><a href="#">CONTACTO</a></li>
+                            <li><a class="cerrarmenu" href="#inicio">INICIO</a></li>
+                            <li><a class="cerrarmenu" href="#sobreNosotros">SOBRE NOSOTROS</a></li>
+                            <li><a class="cerrarmenu" href="#farmacia">FARMACIA</a></li>
+                            <li><a class="cerrarmenu" href="#servicios">SERVICIOS</a></li>
+                            <li><a class="cerrarmenu" href="#contacto">CONTACTO</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="menuFlotante" id="menuFlotante">
+                    <nav>
+                        <ul>
+                            <li><a class="cerrarmenu" href="#">INICIO</a></li>
+                            <li><a class="cerrarmenu" href="#sobreNosotros">SOBRE NOSOTROS</a></li>
+                            <li><a class="cerrarmenu" href="#farmacia">FARMACIA</a></li>
+                            <li><a class="cerrarmenu" href="#servicios">SERVICIOS</a></li>
+                            <li><a class="cerrarmenu" href="#contacto">CONTACTO</a></li>
                         </ul>
                     </nav>
                 </div>
 
             </div>
-
         </div>
 
     </header>
@@ -76,14 +94,14 @@
     </div>
 
 
-    <div class="contenedorPortada">
-        <div class="contenedorContenido">
+    <div id="inicio" class="contenedorPortada">
+        <div class="contenedorContenidoPortada">
 
             <div class="logoPortada">
                 <img src="img/redes 2.png" alt="">
             </div>
 
-            <div class="contenedorTexto">
+            <div class="contenedorTextoPortada">
                 <h1>Tu salud en las manos de expertos</h1>
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
                     tincidunt ut laoreet dolore magna aliquam erat
@@ -93,7 +111,7 @@
 
         </div>
 
-        <div class="doctor">
+        <div id="sobreNosotros"  class="doctor">
             <p>Dr. José Carlos Flores Estrada</p>
             <img src="img/doc.png" alt="">
         </div>
@@ -102,34 +120,63 @@
 
     <div class="contenedorBody">
 
-        <div class="info">
+        <div class="contenedorpresentacion">
+            <div class="presentacion">
 
-            <div class="img">
-                <img src="img/body1.png" alt="">
+                <div class="img">
+                    <img src="img/body1.png" alt="">
+                </div>
+                <div class="texto">
+                    <h1>¿Quienes somos?</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                        tincidunt ut laoreet dolore magna aliquam erat
+                        volutpat. Ut wisi enim ad minim veniam, quis
+                        nostrud exerci tation ullamcorper suscipit
+                        lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in
+                        vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis
+                        at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit
+                        augue duis dolore te feugait nulla facilisi.
+                        Lorem ipsum dolor sit amet, cons</p>
+                </div>
             </div>
-            <div class="texto">
-                <h1>¿Quienes somos?</h1>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-                    tincidunt ut laoreet dolore magna aliquam erat
-                    volutpat. Ut wisi enim ad minim veniam, quis
-                    nostrud exerci tation ullamcorper suscipit
-                    lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in
-                    vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis
-                    at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit
-                    augue duis dolore te feugait nulla facilisi.
-                    Lorem ipsum dolor sit amet, cons</p>
+        </div>
+        
+        <div class="contenedorSlider">
+            <div class="slider">
+                <section class="contenidoSlider">
+                    <div>
+                        <h2>Contactanos</h2>
+                        <a href="#contacto">Contáctanos</a>
+                    </div>
+                </section>
+                <section class="contenidoSlider">
+                    <div>
+                        <h2>Servicios</h2>
+                        <a href="#servicios">Servicios</a>
+                    </div>
+                </section>
+                <section class="contenidoSlider">
+                    <div>
+                        <h2>Redes Sociales</h2>
+                        <a href="#redesSociales">Redes Sociales</a>
+                    </div>
+                </section>
+                <section class="contenidoSlider">
+                    <div>
+                        <h2>Contactanos</h2>
+                        <a href="#contacto">Contáctanos</a>
+                    </div>
+                </section>
             </div>
         </div>
 
-
-        <div class="contenedorInfo">
-
-            <div class="titulo">
+        <div id="farmacia" class="contenedorFarmacia">
+            <div class="tituloFarmacia">
                 <h2>FARMACIA</h2>
             </div>
-
-            <div class="contenidoInfo">
-
+    
+            <div class="contenidoFarmacia">
+    
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
                     tincidunt ut laoreet dolore magna aliquam erat
                     volutpat. Ut wisi enim ad minim veniam, quis
@@ -139,120 +186,127 @@
                     at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit
                     augue duis dolore te feugait nulla facilisi.
                     Lorem ipsum dolor sit amet, cons</p>
-
+    
                 <div class="img">
                     <img src="img/body2.png" alt="">
                 </div>
             </div>
+        </div>
 
+        <div id="servicios" class="contenedorServicios">
+            <div class="tituloServicios">
+                <h2>SERVICIOS</h2>
+            </div>
+        
+            <div class="contenidoServicios">
+        
+                <div class="servicio servicio1">
+                    <div class="imagenServicios">
+                        <img src="img/body2.png" alt="">
+                    </div>
+                    <div class="textoServicios">
+                        <h1>CARDIOLOGIA</h1>
+                    </div>
+                </div>
+                <div class="servicio servicio2">
+                    <div class="imagenServicios">
+                        <img src="img/body2.png" alt="">
+                    </div>
+                    <div class="textoServicios">
+                        <h1>CARDIOLOGIA</h1>
+                    </div>
+                </div>
+                <div class="servicio servicio3">
+                    <div class="imagenServicios">
+                        <img src="img/body2.png" alt="">
+                    </div>
+                    <div class="textoServicios">
+                        <h1>CARDIOLOGIA</h1>
+                    </div>
+                </div>
+                <div class="servicio servicio4">
+                    <div class="imagenServicios">
+                        <img src="img/body2.png" alt="">
+                    </div>
+                    <div class="textoServicios">
+                        <h1>CARDIOLOGIA</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <div id="redesSociales" class="redesSociales">
+            <div class="tituloRedes">
+                <h2>REDES SOCIALES</h2>
+            </div>
+        
+            <div class="contenidoRedes">
+        
+                <div class="imagenRedes">
+                    <img src="img/redesSociales1.jpg" alt="" class="imagenRed">
+                    <a href="#"><img src="img/redes 2.png" alt="" class="iconoRed"></a>
+                </div>
+                <div class="imagenRedes">
+                    <img src="img/redesSociales1.jpg" alt="" class="imagenRed">
+                    <a href="#"><img src="img/redes 2.png" alt="" class="iconoRed"></a>
+                </div>
+                <div class="imagenRedes">
+                    <img src="img/redesSociales1.jpg" alt="" class="imagenRed">
+                    <a href="#"><img src="img/redes 2.png" alt="" class="iconoRed"></a>
+                </div>
+                <div class="imagenRedes">
+                    <img src="img/redesSociales1.jpg" alt="" class="imagenRed">
+                    <a href="#"><img src="img/redes 2.png" alt="" class="iconoRed"></a>
+                </div>
+                <div class="imagenRedes">
+                    <img src="img/redesSociales1.jpg" alt="" class="imagenRed">
+                    <a href="#"><img src="img/redes 2.png" alt="" class="iconoRed"></a>
+                </div>
+                <div class="imagenRedes">
+                    <img src="img/redesSociales1.jpg" alt="" class="imagenRed">
+                    <a href="#"><img src="img/redes 2.png" alt="" class="iconoRed"></a>
+                </div>
+                <div class="imagenRedes">
+                    <img src="img/redesSociales1.jpg" alt="" class="imagenRed">
+                    <a href="#"><img src="img/redes 2.png" alt="" class="iconoRed"></a>
+                </div>
+                <div class="imagenRedes">
+                    <img src="img/redesSociales1.jpg" alt="" class="imagenRed">
+                    <a href="#"><img src="img/redes 2.png" alt="" class="iconoRed"></a>
+                </div>
+        
+            </div>
+        </div>
+
+        <div id="contacto" class="contacto">
+            <div class="tituloContacto">
+                <h2>CONTACTO</h2>
+            </div>
+        
+            <div class="contenidoContacto">
+                <ul>
+                    <li><label for="">Whatsapp: <a href="https://api.whatsapp.com/send?phone=50245297400&text=Hola!%20Necesito%20informaci%C3%B3n%20sobre%20sus%20servicios%20"target="_blank">+502 4529 7400</a></label></li>
+                    <li><label for="">Teléfono: <a href="#">+502 7823 9900</a></label></li>
+                    <li><label for="">E-mail: <a href="https://mail.google.com/mail/"target="_blank">recepcion@centrodecardiologiadeantigua@gmail.com</a></label></li>
+                    <li><label for="">Dirección: <a href="https://goo.gl/maps/AWVYCAkia52ShXYo9"target="_blank">7 avenida sur #6 Antigua Guatemala</a></label></li>
+                </ul>
+            </div>
         </div>
 
     </div>
 
-    <div class="contenedorServicios">
-
-        <div class="tituloServicios">
-            <h2>SERVICIOS</h2>
-        </div>
-
-        <div class="contenidoServicios">
-
-            <div class="imagenServicios">
-                <img src="img/body2.png" alt="">
-            </div>
-            <div class="textoServicios">
-                <h1>CARDIOLOGIA</h1>
-            </div>
-            <div class="imagenServicios">
-                <img src="img/body2.png" alt="">
-            </div>
-            <div class="textoServicios">
-                <h1>CARDIOLOGIA</h1>
-            </div>
-            <div class="textoServicios">
-                <h1>CARDIOLOGIA</h1>
-            </div>
-            <div class="imagenServicios">
-                <img src="img/body2.png" alt="">
-            </div>
-            <div class="textoServicios">
-                <h1>CARDIOLOGIA</h1>
-            </div>
-            <div class="imagenServicios">
-                <img src="img/body2.png" alt="">
-            </div>
-
-
-
-        </div>
-    </div>
-
-    <div class="contenedorRedes">
-
-        <div class="titulo">
-            <h2>REDES SOCIALES</h2>
-        </div>
-
-        <div class="contenidoRedes">
-
-            <div class="imagenRedes">
-                <img src="img/redesSociales1.jpg" alt="" class="imagenRed">
-                <a href="#"><img src="img/redes 2.png" alt="" class="iconoRed"></a>
-            </div>
-            <div class="imagenRedes">
-                <img src="img/redesSociales1.jpg" alt="" class="imagenRed">
-                <a href="#"><img src="img/redes 2.png" alt="" class="iconoRed"></a>
-            </div>
-            <div class="imagenRedes">
-                <img src="img/redesSociales1.jpg" alt="" class="imagenRed">
-                <a href="#"><img src="img/redes 2.png" alt="" class="iconoRed"></a>
-            </div>
-            <div class="imagenRedes">
-                <img src="img/redesSociales1.jpg" alt="" class="imagenRed">
-                <a href="#"><img src="img/redes 2.png" alt="" class="iconoRed"></a>
-            </div>
-            <div class="imagenRedes">
-                <img src="img/redesSociales1.jpg" alt="" class="imagenRed">
-                <a href="#"><img src="img/redes 2.png" alt="" class="iconoRed"></a>
-            </div>
-            <div class="imagenRedes">
-                <img src="img/redesSociales1.jpg" alt="" class="imagenRed">
-                <a href="#"><img src="img/redes 2.png" alt="" class="iconoRed"></a>
-            </div>
-            <div class="imagenRedes">
-                <img src="img/redesSociales1.jpg" alt="" class="imagenRed">
-                <a href="#"><img src="img/redes 2.png" alt="" class="iconoRed"></a>
-            </div>
-            <div class="imagenRedes">
-                <img src="img/redesSociales1.jpg" alt="" class="imagenRed">
-                <a href="#"><img src="img/redes 2.png" alt="" class="iconoRed"></a>
-            </div>
-           
-        </div>
-
-    </div>
-
-    <div class="contenedorContacto">
-
-        <div class="tituloContacto">
-            <h2>CONTACTO</h2>
-        </div>
-
-        <div class="contenidoContacto">
-            <ul>
-                <li><label for="">Whatsapp: <a href="#">123 4567 8910</a></label></li>
-                <li><label for="">Teléfono: <a href="#">4567 8910</a></label></li>
-                <li><label for="">E-mail: <a href="#">email@email.com</a></label></li>
-                <li><label for="">Dirección: <a href="#">8a. Avenida 13-06, Zona 1</a></label></li>
-            </ul>
-        </div>
     
+
+
+
     </div>
 
     <footer>
-        <img src="img/logo.png" alt="">
+        <img src="img/logo.svg" alt="">
     </footer>
+
+    <script src="main/main.js"></script>
+
 </body>
 
 </html>

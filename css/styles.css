@@ -1,0 +1,641 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    transition: all 200ms;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --fondo: #ffffff;
+    --base: #a10333;
+    --fuente: #231f20;
+    --CCA: #E96252;
+}
+
+::-webkit-scrollbar{
+    width: 10px;   
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--base);
+}
+
+header{
+    width: 100%;
+    z-index: 2;
+}
+
+
+/* accesos y redes */
+
+.contenedorAccesos{
+    width: 100%;
+    background-color: var(--CCA);
+    position: fixed;
+    z-index: 2;
+    top: 0;
+}
+
+.contenidoAccesos{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 0px;
+}
+
+.accesos, .redes{
+    height: 80px;
+    color: var(--fondo);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--CCA);
+}
+
+.accesos nav, .redes nav{
+    height: 100%;
+}
+
+.accesos nav ul, .redes nav ul{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.accesos nav ul li, .redes nav ul li{
+    height: 100%;
+    margin: 0px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.accesos a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--fondo);
+    z-index: 1;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.5s ease-in-out;
+}
+.accesos a:hover::before {
+    transform: scaleX(1);
+}
+
+.redes nav ul .iconoWhatsapp{
+    display: none;
+}
+
+.accesos nav ul li a{
+    color: var(--fondo);
+    position: relative;
+}
+
+.accesos nav ul li img{
+    cursor: initial;
+}
+
+.accesos nav ul li img, .redes nav ul li img{
+    height: 1.5rem;
+    filter: invert();
+    padding: 0px 10px;
+}
+
+
+.iconoMenu{
+    display: none;
+
+}
+
+.animated{
+    display: flex;
+}
+
+
+/* nav*/
+
+.contenedorNav{
+    width: 100%;
+    margin-top: 80px;
+    background: var(--fondo);
+}
+
+.contenidoNav{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 0px;
+    background-color: var(--fondo);
+}
+
+.logo a{
+    height: 120px;
+    display: flex;
+    align-items: center;
+}
+
+.logo a img{
+    height: 60%;
+}
+
+.menu{
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu nav {
+    height: 100%;
+}
+
+.menu nav ul{
+    height: 100%;
+    display: flex;
+    list-style: none;
+    
+}
+
+.menu nav ul li{
+    height: 100%;
+    margin: 0px 25px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.menu nav ul li a{
+  color: var(--fuente);
+  position: relative;
+}
+
+.menu a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--fuente);
+    z-index: 1;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.5s ease-in-out;
+}
+.menu a:hover::before {
+    transform: scaleX(1);
+}
+
+
+/* nav responsive pa*/
+
+.menuFlotante{
+    height: 300px;
+    display: flex;
+    transform: translateY(-100vh);
+    position: fixed;
+    margin-top: 40px;
+    padding: 20px 30px;
+    border-radius: 10px;
+    right: 10%;
+    z-index: 4;
+    background: #231f20ef;
+    transition: all 500ms;
+}
+
+.mostrar{
+    transform: translateY(0);
+}
+
+.menuFlotante nav {
+    height: 100%;
+}
+
+.menuFlotante nav ul{
+    height: 100%;
+    list-style: none;
+    transition: all 200ms;
+}
+
+.menuFlotante nav ul li{
+    height: 20%;
+    margin: 0px 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.menuFlotante nav ul li a{
+  color: var(--fondo);
+  position: relative
+
+}
+
+.menuFlotante a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--fondo);
+    z-index: 1;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.5s ease-in-out;
+}
+.menuFlotante a:hover::before {
+    transform: scaleX(1);
+}
+
+
+/* whatsapp */
+
+.whatsapp{
+    position: relative;
+    max-width: 100%;
+    height: 60px;
+    margin: auto;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 0px 0px;
+
+}
+.contenidoWhatsapp{
+    background-color: var(--CCA);
+    padding: 18px 20px;
+    width: 30%;
+    align-items: center;
+    display: flex;
+}
+.contenidoWhatsapp img{
+    width: 1.4rem;
+    height: 1.4rem;
+    filter: invert();
+}
+.contenidoWhatsapp label {
+    font-size: 1rem;
+    color: var(--fondo);
+    padding-left: 20px;
+}
+
+
+
+/*Portada pa*/
+
+.contenedorPortada{
+    width: 100%;
+    height: 700px;
+    position: relative;
+    background-image: url(../img/wallpaper.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedorContenidoPortada{
+    width: 60%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logoPortada img{
+    width: 4rem;
+    filter: invert();
+    
+}
+.contenedorTextoPortada{
+    color: var(--fondo);
+    padding: 0px 40px;
+}
+.contenedorTextoPortada p{
+    max-width: 60%;
+    font-size: 2vh;
+}
+.contenedorTextoPortada h1{
+    font-size: 5vh;
+}
+
+.doctor{
+    width: 90%;
+    height: 20%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.doctor img{
+    width: 3rem;
+    height: 3rem;
+    margin-left: 20px;
+    padding: 10px;
+    filter: invert();
+    border: solid black 2px;
+}
+.doctor p{
+    color: var(--fondo);
+}
+
+
+/* body */
+
+.contenedorBody{
+    margin-top: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.presentacion{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.img{
+    width: 45%;
+}
+
+.texto{
+    width: 50%;
+}
+
+.texto p{
+    font-size: 2.3vh;
+    color: var(--fuente);
+    margin: 1rem 0rem;
+}
+
+.texto h1{
+    font-size: 3rem;
+    margin: 1rem 0rem;
+}
+
+
+/* Slider*/
+
+.contenedorSlider{
+    margin-top: 80px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider{
+    width: 100%;
+    display: flex;
+}
+
+.contenidoSlider{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-shrink: 0;
+    background-image: url(../img/slide\ 1.jpg);
+    color: #fff;
+    background-size: cover;
+}
+
+.contenidoSlider:nth-child(2){
+    background-image: url(../img/slide\ 2.jpg);
+    background-size: cover;
+}
+
+.contenidoSlider:nth-child(3){
+    background-image: url(../img/slide\ 3.jpg);
+    background-size: cover;
+}
+
+.contenidoSlider > div{
+    width: 40%;
+}
+
+.contenidoSlider h2{
+    font-weight: 300;
+    line-height: 30px;
+    font-size: 25px;
+    transition: all 200ms;
+}
+
+.contenidoSlider a{
+    color: #fff;
+    background: #332863;
+    width: 180px;
+    display: block;
+    padding: 15px 15px;
+    text-align: center;
+    border-radius: 3px;
+    margin-top: 20px;
+    text-decoration: none;
+    transition: all 200ms;
+}
+
+.contenidoSlider a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--fuente);
+    z-index: 1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease-in-out;
+}
+.contenidoSlider a:hover::before {
+    transform: scaleX(1);
+}
+
+/* Farmacia */
+
+.tituloFarmacia{
+    margin: 150px 0px 50px 0px;
+    padding: 0rem 2rem 0px 14%;
+    max-width:  fit-content;
+    border: 2px var(--base) solid;
+    border-left: none;
+}
+
+.contenidoFarmacia{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+h2{
+    font-size: 3rem;
+    margin: 1rem;
+}
+
+.contenidoFarmacia p{
+    font-size: 2.3vh;
+    color: var(--fuente);
+    width: 45%;
+}
+
+.img img{
+    width: 100%;
+}
+
+
+/* Servicios */
+
+.tituloServicios{
+    margin: 150px 0px 50px 0px;
+    padding: 0 14% 0 2rem;
+    max-width:  fit-content;
+    border: 2px var(--base) solid;
+    border-right: none;
+    margin-left: auto;
+}
+
+.contenidoServicios{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.servicio{
+    width: 50%;
+    display: flex;
+}
+
+.servicio1, .servicio2{
+    flex-direction: row;
+}
+
+.servicio3, .servicio4{
+    flex-direction: row-reverse;
+}
+
+.textoServicios{
+    width: 50%;
+}
+
+.textoServicios h1{
+    font-size: 3vh;
+    margin: 20px 20px;
+}
+
+.contenidoServicios .imagenServicios{
+    width: 50%;
+    margin: 0;
+}
+
+.contenidoServicios .imagenServicios img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* Redes */
+
+.tituloRedes{
+    margin: 150px 0px 50px 0px;
+    padding: 0rem 2rem 0px 14%;
+    max-width:  fit-content;
+    border: 2px var(--base) solid;
+    border-left: none;
+}
+
+.contenidoRedes{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.imagenRedes{
+    width: 25%;
+    padding: 20px;
+}
+
+.imagenRed{
+    width: 100%;
+    object-fit: cover;
+}
+
+.iconoRed{
+    width: 3vh;
+    transform: translateY(-6vh);
+    margin-left: 80%;
+    filter: invert();
+}
+
+
+/* Contacto */
+
+.tituloContacto{
+    margin: 150px 0px 50px 0px;
+    padding: 0 14% 0 2rem;
+    max-width:  fit-content;
+    border: 2px var(--base) solid;
+    margin-left: auto;
+    border-right: none;
+}
+
+.contenidoContacto{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: right;
+}
+.contenidoContacto ul li label{
+    font-size: 2vh;
+}
+.contenidoContacto ul li label a{
+    color: var(--fuente);
+    position: relative;
+}
+.contenidoContacto a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--fuente);
+    z-index: 1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease-in-out;
+}
+.contenidoContacto a:hover::before {
+    transform: scaleX(1);
+}
+/* footer? */
+
+
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 60px 0px;
+}
+footer img{
+    width: 15%;
+    height: 15%;
+}
